@@ -13,7 +13,7 @@ Save plist file to desired daemon/agent directory. See [Job Definition section o
 
 Load the plist into launchd. `launchctl load -F {path to plist}`. Verify it loaded properly and is present in launchd list of jobs. `launchctl list | grep timeloggingweekdays`. 
 
-Test job by starting it manually `launchctl start timeloggingweekdays`. Troubleshoot as necessary. For changes to plist file to take effect, you must unload the plist and load it back in. 
+Test job by starting it manually `launchctl start timeloggingweekdays`. Troubleshoot as necessary. For changes to plist file to take effect, you must unload the job from launchd `launchctl unload {path to plist}` and load it back in. 
 
 # Troubleshooting Tips
 
