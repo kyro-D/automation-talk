@@ -5,7 +5,7 @@ This repo includes all the files necessary to setup automation of opening timelo
 
 # Basic Setup
 Save script of your choice in a folder under user directory. 
-Give script executable permissions with `chmod +x {path to script}`
+Give script executable permissions with `chmod +x {path to script}`. Note that mac considers files in `~/Documents` as private so you will encouter permissions errors if you try to place the script here. I got around this by making a folder under my user directory called `Cron-Job-Scripts`. 
 
 Update `com.timeloggingweekdays.plist` with appropriate script location and log files.
 
